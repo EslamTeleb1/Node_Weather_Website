@@ -1,4 +1,4 @@
-console.log('client side loaded successfully!');
+//console.log('client side loaded successfully!');
 
 // fetch(url).then((response)=>{
 
