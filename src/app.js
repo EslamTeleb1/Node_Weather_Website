@@ -25,7 +25,7 @@ app.get('',(req,res)=>{
 
     res.render('index',{
         title:'Weather',
-        name:'Islam'
+        name:'Islam Tolba'
     })
 })
 app.get('/about',(req,res)=>{
@@ -41,7 +41,7 @@ app.get('/help',(req,res)=>{
     res.render('help',{
         text:'help page',
         title:'help page',
-        name:'islam'
+        name:'Islam Tolba'
     })
 })
 
@@ -96,7 +96,7 @@ app.get('/help/*',(req,res)=>{
 
     res.render('404',{
         title:404,
-        name:'Islam',
+        name:'Islam Tolba',
         messageError:"can't find the article help page"
 
     });
@@ -105,7 +105,7 @@ app.get('*',(req,res)=>{
 
     res.render('404',{
         title:404,
-        name:'Islam',
+        name:'Islam Tolba',
         messageError:"can't find the  page"
 
     });
