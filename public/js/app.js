@@ -42,7 +42,7 @@ weatherForm.addEventListener('submit',(e)=>{
                 console.log(error);
             }
             else{
-             message1.textContent=data[0];//location
+             message1.textContent=data[0]+", local time : " +data[1].localtime;//location and local time
              const result='temperature : '+ data[1].temperature +' , feelsLike : '+data[1].feelsLike + ' , Weather Description : '+data[1].weatherDescription ;// forecast
              message2.textContent=result;
              //console.log(Object.entries(data.responseForecast))

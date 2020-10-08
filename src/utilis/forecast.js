@@ -20,12 +20,14 @@ request({url ,json:true}, (error, {body}) => {
         
         const  temperature =body.current.temperature,
         feelsLike = body.current.feelslike,
-        weatherDescription = body.current.weather_descriptions[0];
+        weatherDescription = body.current.weather_descriptions[0],
+        localtime= body.location.localtime;
 
         callBack(undefined,{
             temperature,
             feelsLike ,
-            weatherDescription 
+            weatherDescription ,
+            localtime
         });
 
     }
